@@ -57,7 +57,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainNavigator>(), MainNav
                 val statusRes = response.data as StatusCountResponse
                 Log.d("TAG", "StsResponses: $statusRes")
                 Toast.makeText(this,statusRes.toString(),Toast.LENGTH_SHORT).show()
-                Log.e(TAG,"NewResponse...")
+                Log.e(TAG,"NewResponse..."+"TestingValue")
             }
         }
 
