@@ -29,6 +29,8 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainNavigator>(), MainNav
 
     lateinit var mainViewModel: MainViewModel
 
+    private val TAG = "MainActivity"
+
 
     override fun getLayoutId(): Int {
         return R.layout.activity_main
@@ -55,6 +57,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainNavigator>(), MainNav
                 val statusRes = response.data as StatusCountResponse
                 Log.d("TAG", "StsResponses: $statusRes")
                 Toast.makeText(this,statusRes.toString(),Toast.LENGTH_SHORT).show()
+                Log.e(TAG,"NewResponse...")
             }
         }
 
