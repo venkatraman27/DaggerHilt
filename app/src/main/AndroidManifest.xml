@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dagger.daggerhilt" >
+    package="com.dagger.daggerhilt">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
-
 
     <application
         android:name=".util.application.AppController"
@@ -14,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DaggerHilt">
-
+        <activity
+            android:name=".screens.TestActivity"
+            android:exported="false" />
         <activity
             android:name=".screens.MainActivity"
             android:exported="true">
@@ -24,8 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
-
 
 </manifest>
