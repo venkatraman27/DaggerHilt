@@ -52,14 +52,27 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainNavigator>(), MainNav
         mainBinding = getViewDataBinding()
         mainViewModel.navigator = this
 
-        mainViewModel.loadStatusCount("8888", "8888").observe(this) { response ->
-            if (response != null) {
-                val statusRes = response.data as StatusCountResponse
-                Log.d("TAG", "StsResponses: $statusRes")
-                Toast.makeText(this,statusRes.toString(),Toast.LENGTH_SHORT).show()
-                Log.e(TAG,"NewResponse..."+"TestingValue")
+        mainViewModel.loadStatusCount("","").observe(this){
+
+            if (it != null) {
+
+                val ss = it.data as StatusCountResponse
+
+                val sss = ss.todayCount
+
+                Log.d(TAG, "onCreate() returned: $sss")
+
             }
         }
+
+//        mainViewModel.loadStatusCount("8888", "8888").observe(this) { response ->
+//            if (response != null) {
+//                val statusRes = response.data as StatusCountResponse
+//                Log.d("TAG", "StsResponses: $statusRes")
+//                Toast.makeText(this,statusRes.t  oString(),Toast.LENGTH_SHORT).show()
+//                Log.e(TAG,"NewResponse..."+"TestingValue")
+//            }
+//        }
 
     }
 

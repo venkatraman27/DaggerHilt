@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android_project/DaggerHilt/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Android_project/DaggerHilt/app/src/main/res/layout/activity_test.xml" value="0.17074275362318841" />
         <entry key="..\:/Venkat_Android_Project/DaggerHilt/app/src/main/res/drawable/ic_white_back.xml" value="0.155" />
         <entry key="..\:/Venkat_Android_Project/DaggerHilt/app/src/main/res/drawable/progress_background.xml" value="0.155" />
@@ -13,7 +14,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
